@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    :root {
+        --vermelho: #CC3926 ;
+        --azul: #5E76C9;
+        --azulEscuro: #1a3183;
+        --azulMaisEscuro: #071033;
+        --bege: #EFE9CE;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(assets/fundo2.png); 
+    color: #424242;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #EFE9CE;
+    padding: 20px 5%;
+    border-bottom: 2px solid #5E76C9;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav img {
+    height: 70px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #5E76C9; 
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: var(--vermelho);
+}
+
+main h2, label, h1 {
+    color: var(--azulEscuro);
+}
+
+main p {
+    color: var(--azulMaisEscuro);
+}
+button {
+    background-color: var(--vermelho);
+    color: white;
+    padding: 7px;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+
+}
+
+.card-info {
+    margin: 30px;
+    width: 310px;
+    height: 350px;
+    background-color: #5e75c944;
+    border-radius: 20px ;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+
+}
+
+.contatc {
+
+}
