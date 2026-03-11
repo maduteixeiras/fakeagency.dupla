@@ -1,5 +1,128 @@
-:root {
-    --vermelho: #CC3926 ;
-    --azul: #5E76C9;
-    --bege: #EFE9CE;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    :root {
+        --vermelho: #CC3926 ;
+        --azul: #5E76C9;
+        --azulEscuro: #1a3183;
+        --azulMaisEscuro: #071033;
+        --bege: #EFE9CE;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* main {
+    background-image: url(assets/unnamed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+body {
+    background-color: var(--azulEscuro);
+    /* background-image: url(assets/unnamed.jpg); */
+    max-width: 100% ;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* cabeçalho */
+header {
+    background-color: #EFE9CE;
+    padding: 20px 5%;
+    border-bottom: 2px solid #5E76C9;
+}
+
+/* navegação */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav img {
+    height: 70px;
+    position: relative;
+    margin-left: -170px;
+}
+.nav h2 {
+    color: var(--azul);
+    margin-left: 10px;
+    font-size: medium;
+    position: relative;
+    text-align: left;
+    margin-left: -930px  
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #5E76C9; 
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: var(--vermelho);
+}
+
+/* corpo */
+
+main {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente (se o main tiver altura) */
+    text-align: center;      /* Garante que o texto do h1 também centralize */
+}
+
+main h1 {
+    color: rgb(232, 239, 245);
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+button {
+    background-color: var(--vermelho);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 7px;
+    width: 100px;
+    margin-top: 30px;
+    border: none;
+}  
+
+button a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/* rodapé */
+footer {
+    background-color: #EFE9CE;
+    padding: 60px 5%;
+    text-align: center;
+    margin-top: auto;
+}
+
+main h1 {
+    color: rgb(232, 239, 245);
+    font-size: 3rem;
+}
+
