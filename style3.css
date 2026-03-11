@@ -21,13 +21,14 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
+/* cabeçalho */
 header {
     background-color: #EFE9CE;
     padding: 20px 5%;
     border-bottom: 2px solid #5E76C9;
 }
 
+/* navehação */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,16 @@ header {
 
 .nav img {
     height: 70px;
+    position: relative;
+    margin-left: -170px;
+}
+.nav h2 {
+    color: var(--azul);
+    margin-left: 10px;
+    font-size: medium;
+    position: relative;
+    text-align: left;
+    margin-left: -930px  
 }
 
 .nav-list {
@@ -58,38 +69,79 @@ header {
     color: var(--vermelho);
 }
 
+
 main h2, label, h1 {
-    color: var(--azulEscuro);
+    color: rgb(0, 0, 0);
 }
 
 main p {
     color: var(--azulMaisEscuro);
-}
-button {
-    background-color: var(--vermelho);
-    color: white;
-    padding: 7px;
-    height: 30px;
-    width: 80px;
-    border-radius: 10px;
-
 }
 
 .card-info {
     margin: 30px;
     width: 310px;
     height: 350px;
-    background-color: #5e75c944;
+    background-color: #5e75c97c;
     border-radius: 20px ;
     text-align: left;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    margin-left: 460px;
+    border: 1px solid black;
 }
 
 h1 {
     text-align: center;
     margin: 30px;
-
 }
 
+
 .contatc {
+    text-align: left;
+    position: relative;
+    margin-left: 820px;
+    margin-top: -380px;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 300px;
+}
+
+.form label {
+    font-weight: bold;
+}
+
+.form input, textarea{
+    padding: 8px;
+    border: 1.5px solid #000000;
+    border-radius: 10px;
+}
+
+button {
+    background-color: var(--vermelho);
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 70px;
+    align-self: flex-start;
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+}  
+
+footer {
+    background-color: var(--azul);
+    position: relative;
+    margin-top: 150px;
+    height: 100px;
+
 
 }
