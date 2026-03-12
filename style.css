@@ -111,13 +111,26 @@ button {
 button a {
     text-decoration: none;
     color: white;
+}
+
+.buttonmain-link{
+    text-decoration: none;
+    color: white;
     text-align: center;
+}
+
+.butonfooter{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: left;
+    position: relative;
+
 }
 
 /* rodapé */
 footer {
     background-color: var(--bege);
-    padding: 60px 5%;
+    padding: 10px 5%;
     text-align: center;
     margin-top: auto;
 }
@@ -127,7 +140,7 @@ footer h2{
     font-size: 2rem;
     margin-bottom: 20px;
     margin-left: -1340px;
-    margin-top: -40px;
+
 }
 
 footer p {
